@@ -7,7 +7,7 @@ const ButtonNavigation = ({page,nextPage,nextP,prevPage}) => {
         <Button
           label="SUIVANT"
           onClick={nextPage}
-          className="p-button-help p-button-rounded shadow-none"
+          className="p-button-help p-button-rounded shadow-none label-title"
         />
       )}
       {page === 1 && (
@@ -15,12 +15,12 @@ const ButtonNavigation = ({page,nextPage,nextP,prevPage}) => {
           <Button
             label="PRECEDANT"
             onClick={prevPage}
-            className="p-button-secondary p-button-rounded shadow-none"
+            className="p-button-secondary p-button-rounded shadow-none label-title"
           />
           <Button
             label="SUIVANT"
             onClick={nextP}
-            className=" p-button-help p-button-rounded shadow-none"
+            className=" p-button-help p-button-rounded shadow-none label-title"
             style={{ marginLeft: "4px" }}
           />
         </div>
@@ -30,11 +30,11 @@ const ButtonNavigation = ({page,nextPage,nextP,prevPage}) => {
           <Button
             label="PRECEDANT"
             onClick={prevPage}
-            className="p-button-secondary p-button-rounded shadow-none"
+            className="p-button-secondary p-button-rounded shadow-none label-title"
           />
           <Button
             label="SUBMIT"
-            className="p-button-help p-button-rounded shadow-none"
+            className="p-button-help p-button-rounded shadow-none label-title"
             type="submit"
             style={{ marginLeft: "4px" }}
           />

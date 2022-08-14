@@ -10,7 +10,7 @@ const Step4 = ({ formik, getFormErrorMessage, isFormFieldValid, t }) => {
         <label
           htmlFor="date_arrivee_sejour"
           className={
-            "mb-2" ||
+            "mb-2 label-title" ||
             classNames({
               "p-error": isFormFieldValid("date_arrivee_sejour"),
             })
@@ -35,7 +35,7 @@ const Step4 = ({ formik, getFormErrorMessage, isFormFieldValid, t }) => {
         <label
           htmlFor="date_depart_sejour"
           className={
-            "mb-2" ||
+            "mb-2 label-title" ||
             classNames({
               "p-error": isFormFieldValid("date_depart_sejour"),
             })

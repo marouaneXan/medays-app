@@ -12,7 +12,7 @@ const Step3 = ({ formik, getFormErrorMessage, isFormFieldValid, t }) => {
         <label
           htmlFor="email"
           className={
-            "mb-2" || classNames({ "p-error": isFormFieldValid("email") })
+            "mb-2 label-title" || classNames({ "p-error": isFormFieldValid("email") })
           }
         >
           {t("Home:arrival_date")}
@@ -32,7 +32,7 @@ const Step3 = ({ formik, getFormErrorMessage, isFormFieldValid, t }) => {
         <label
           htmlFor="horaire"
           className={
-            "mb-2" || classNames({ "p-error": isFormFieldValid("pays") })
+            "mb-2 label-title" || classNames({ "p-error": isFormFieldValid("pays") })
           }
         >
           {t("Home:schedule")}
@@ -54,7 +54,7 @@ const Step3 = ({ formik, getFormErrorMessage, isFormFieldValid, t }) => {
         <label
           htmlFor="aeroport_provenance"
           className={
-            "mb-2" ||
+            "mb-2 label-title" ||
             classNames({
               "p-error": isFormFieldValid("aeroport_provenance"),
             })
@@ -82,7 +82,7 @@ const Step3 = ({ formik, getFormErrorMessage, isFormFieldValid, t }) => {
         <label
           htmlFor="date_depart"
           className={
-            "mb-2" || classNames({ "p-error": isFormFieldValid("date_depart") })
+            "mb-2 label-title" || classNames({ "p-error": isFormFieldValid("date_depart") })
           }
         >
           {t("Home:date_depart")}
@@ -102,7 +102,7 @@ const Step3 = ({ formik, getFormErrorMessage, isFormFieldValid, t }) => {
         <label
           htmlFor="horaire_depart"
           className={
-            "mb-2" || classNames({ "p-error": isFormFieldValid("pays") })
+            "mb-2 label-title" || classNames({ "p-error": isFormFieldValid("pays") })
           }
         >
           {t("Home:schedule")}
@@ -124,7 +124,7 @@ const Step3 = ({ formik, getFormErrorMessage, isFormFieldValid, t }) => {
         <label
           htmlFor="aeroport_provenance"
           className={
-            "mb-2" ||
+            "mb-2 label-title" ||
             classNames({
               "p-error": isFormFieldValid("aeroport_provenance"),
             })

@@ -5,6 +5,7 @@
     text-decoration: none;
     display: block;
     text-align: center;
+    font-family: 'Roboto', sans-serif;
 }
 #date_naissance{
   box-shadow:none;

@@ -30,10 +30,10 @@ const Footer = () => {
             </div>
 
             <div className="col-md-4 pt-5">
-              <h2 className="h2 text-light border-bottom pb-3 border-light">
+              <h2 className="h2 text-light border-bottom pb-3 border-light title">
                 À propos
               </h2>
-              <p className="text-light">
+              <p className="text-light text-help">
                 DISRUPTIVE THINKING est notre MANIFESTE. Il nous définit par ce
                 que nous sommes, ce en quoi nous croyons et ce que nous faisons.
                 C’est la base sur laquelle nous bâtissons et nourrissons notre
@@ -42,21 +42,21 @@ const Footer = () => {
             </div>
 
             <div className="col-md-4 pt-5">
-              <h2 className="h2 text-light border-bottom pb-3 border-light">
+              <h2 className="h2 text-light border-bottom pb-3 border-light title">
                 Plus d'infos
               </h2>
               <ul className="list-unstyled text-light footer-link-list">
                 <li>
                 <GiPositionMarker className='fs-5' style={{color:'white',marginRight:'4px'}}/>
-                  <a className="text-decoration-none text-white">18 Av. Moulay Hassan, Rabat 10020</a>
+                  <a className="text-decoration-none text-white text-help">18 Av. Moulay Hassan, Rabat 10020</a>
                 </li>
                 <li className='mt-2'>
                 <BsFillTelephoneFill className='fs-5' style={{color:'white',marginRight:'4px'}}/>
-                  <a className="text-decoration-none text-white"> 05377-23944</a>
+                  <a className="text-decoration-none text-white text-help"> 05377-23944</a>
                 </li>
                 <li className='mt-2'>
                 <MdEmail className='fs-5' style={{color:'white',marginRight:'4px'}}/>
-                  <a className="text-decoration-none text-white">
+                  <a className="text-decoration-none text-white text-help">
                   hello@innoveos.com
                   </a>
                 </li>
@@ -115,7 +115,7 @@ const Footer = () => {
           <div className="container">
             <div className="row pt-2">
               <div className="col-12">
-                <p className="text-light text-center">
+                <p className="text-light text-center text-help">
                   Copyright &copy; 2022 MeDays Forum
                 </p>
               </div>

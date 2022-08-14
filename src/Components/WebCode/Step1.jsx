@@ -14,7 +14,7 @@ const Step1 = ({formik,getFormErrorMessage,isFormFieldValid,t}) => {
             onChange={formik.handleChange}
             checked={formik.values.genre === t("Home:Madam")}
           />
-          <label htmlFor={t("Home:Madam")} style={{ marginLeft: "8px" }}>
+          <label htmlFor={t("Home:Madam")} className="label-title" style={{ marginLeft: "8px" }}>
             {t("Home:Madam")}
           </label>
         </div>
@@ -25,7 +25,7 @@ const Step1 = ({formik,getFormErrorMessage,isFormFieldValid,t}) => {
             onChange={formik.handleChange}
             checked={formik.values.genre === t("Home:Mister")}
           />
-          <label htmlFor={t("Home:Mister")} style={{ marginLeft: "8px" }}>
+          <label htmlFor={t("Home:Mister")} className="label-title" style={{ marginLeft: "8px" }}>
             {t("Home:Mister")}
           </label>
         </div>
@@ -35,7 +35,7 @@ const Step1 = ({formik,getFormErrorMessage,isFormFieldValid,t}) => {
         <label
           htmlFor={t("Home:Fname")}
           className={
-            "mb-2" || classNames({ "p-error": isFormFieldValid("prenom") })
+            "mb-2 label-title" || classNames({ "p-error": isFormFieldValid("prenom") })
           }
         >
           {t("Home:Fname")}
@@ -55,7 +55,7 @@ const Step1 = ({formik,getFormErrorMessage,isFormFieldValid,t}) => {
         <label
           htmlFor={t("Home:Lname")}
           className={
-            "mb-2" || classNames({ "p-error": isFormFieldValid("nom") })
+            "mb-2 label-title" || classNames({ "p-error": isFormFieldValid("nom") })
           }
         >
           {t("Home:Lname")}
@@ -74,7 +74,7 @@ const Step1 = ({formik,getFormErrorMessage,isFormFieldValid,t}) => {
         <label
           htmlFor={t("Home:organisation")}
           className={
-            "mb-2" || classNames({ "p-error": isFormFieldValid("organisme") })
+            "mb-2 label-title" || classNames({ "p-error": isFormFieldValid("organisme") })
           }
         >
           {t("Home:organisation")}
@@ -94,7 +94,7 @@ const Step1 = ({formik,getFormErrorMessage,isFormFieldValid,t}) => {
         <label
           htmlFor={t("Home:title")}
           className={
-            "mb-2" || classNames({ "p-error": isFormFieldValid("fonction") })
+            "mb-2 label-title" || classNames({ "p-error": isFormFieldValid("fonction") })
           }
         >
           {t("Home:title")}
@@ -114,7 +114,7 @@ const Step1 = ({formik,getFormErrorMessage,isFormFieldValid,t}) => {
         <label
           htmlFor={t("Home:citizenship")}
           className={
-            "mb-2" || classNames({ "p-error": isFormFieldValid("nationalite") })
+            "mb-2 label-title" || classNames({ "p-error": isFormFieldValid("nationalite") })
           }
         >
           {t("Home:citizenship")}
@@ -136,7 +136,7 @@ const Step1 = ({formik,getFormErrorMessage,isFormFieldValid,t}) => {
         <label
           htmlFor="date_naissance"
           className={
-            "mb-2" ||
+            "mb-2 label-title" ||
             classNames({ "p-error": isFormFieldValid("date_naissance") })
           }
         >

@@ -11,7 +11,7 @@ const BannerHelp = ({page,t}) => {
         {page === 2 && code_perso && <>{t('Home:aircraft_title')}</>}
         {page === 3 && code_perso && <>{t('Home:stay')}</>}
       </h6>
-      <p className="text-center mt-3">
+      <p className="text-center mt-3 text-help">
         {(page === 0 || page === 1 || page === 3) && t("Home:fill_req_mssg")}
         {page===2 && !code_perso && (
                <>{t('Home:reason')}</>
@@ -25,7 +25,7 @@ const BannerHelp = ({page,t}) => {
       <h6 className="text-center" id="title_help">
         {t("Home:Amadeus")}
       </h6>
-      <p className="text-center mt-3">{t("Home:for_more")}</p>
+      <p className="text-center mt-3 text-help">{t("Home:for_more")}</p>
       <a
         href="mailto:inscriptions@amadeusonline.org"
         target="_blank"

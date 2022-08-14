@@ -176,7 +176,7 @@ const FormStep = ({ page, setPage }) => {
   // console.log(formik);
   return (
     <div className="col-sm-7 mt-2 p-5">
-      <h4>{t("Home:app_req_mssg")}</h4>
+      <h4 className="">{t("Home:app_req_mssg")}</h4>
       <form onSubmit={formik.handleSubmit} className="p-fluid mt-5">
         <div className="mt-4">
           {getStep()}

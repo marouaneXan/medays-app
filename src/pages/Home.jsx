@@ -58,16 +58,16 @@ const Home = () => {
             </p> */}
             <div className="d-flex flex-column align-items-center ">
               <div
-                className="text-center text-sm-center p-3"
+                className=" p-3"
                 style={{ width: "80%" }}
               >
-                {t("Home:leftDescription1_mssg")}
+                <p className="text-center text-sm-center text-help">{t("Home:leftDescription1_mssg")}</p>
               </div>
               <div
-                className="text-center text-sm-center p-3"
+                className="p-3"
                 style={{ width: "80%" }}
               >
-                {t("Home:leftDescription2_mssg")}
+                <p className="text-center text-sm-center text-help">{t("Home:leftDescription2_mssg")}</p>
               </div>
             </div>
 
@@ -76,7 +76,7 @@ const Home = () => {
                 <Button
                   style={{ width: "300px" }}
                   label={t("Home:Particip_btn")}
-                  className="p-button-secondary p-button-rounded shadow-none"
+                  className="p-button-secondary p-button-rounded shadow-none label-title"
                 />
               </Link>
               <Link
@@ -87,7 +87,7 @@ const Home = () => {
                 <Button
                   style={{ width: "300px" }}
                   label={t("Home:press_btn")}
-                  className="btn-dark p-button-rounded shadow-none"
+                  className="btn-dark p-button-rounded shadow-none label-title"
                 />
               </Link>
             </div>
@@ -106,7 +106,7 @@ const Home = () => {
             className="p-5 mt-5 bg-light shadow"
             style={{ height: "420px" }}
           >
-            <p className=" mt-3 text-center">
+            <p className=" mt-3 text-center text-help">
               {t("Home:rightDescription_mssg")} <br />{" "}
               {t("Home:rightDiscr2_mssg")}
             </p>
@@ -138,7 +138,7 @@ const Home = () => {
                 </div>
                   <Button
                     label={t("Home:next_btn")}
-                    className="p-button-secondary w-100 p-button-rounded shadow-none mt-3"
+                    className="p-button-secondary w-100 p-button-rounded shadow-none mt-3 label-title"
                     type="submit"
                   />
               </div>

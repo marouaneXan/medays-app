@@ -10,7 +10,7 @@ const Step2 = ({formik,getFormErrorMessage,isFormFieldValid,t}) => {
               <label
                 htmlFor="pays"
                 className={
-                  "mb-2" || classNames({ "p-error": isFormFieldValid("pays") })
+                  "mb-2 label-title" || classNames({ "p-error": isFormFieldValid("pays") })
                 }
               >
                 {t('Home:coutry_res')}
@@ -32,7 +32,7 @@ const Step2 = ({formik,getFormErrorMessage,isFormFieldValid,t}) => {
               <label
                 htmlFor="ville"
                 className={
-                  "mb-2" || classNames({ "p-error": isFormFieldValid("ville") })
+                  "mb-2 label-title" || classNames({ "p-error": isFormFieldValid("ville") })
                 }
               >
                 {t('Home:city')}
@@ -72,7 +72,7 @@ const Step2 = ({formik,getFormErrorMessage,isFormFieldValid,t}) => {
               <label
                 htmlFor="tel_pro"
                 className={
-                  "mb-2" ||
+                  "mb-2 label-title" ||
                   classNames({ "p-error": isFormFieldValid("tel_pro") })
                 }
               >
@@ -93,7 +93,7 @@ const Step2 = ({formik,getFormErrorMessage,isFormFieldValid,t}) => {
               <label
                 htmlFor="tele_mob"
                 className={
-                  "mb-2" ||
+                  "mb-2 label-title" ||
                   classNames({ "p-error": isFormFieldValid("tele_mob") })
                 }
               >
@@ -127,7 +127,7 @@ const Step2 = ({formik,getFormErrorMessage,isFormFieldValid,t}) => {
                   onChange={formik.handleChange}
                   checked={formik.values.piece_identite === "cin"}
                 />
-                <label htmlFor="cin" style={{ marginLeft: "8px" }}>
+                <label htmlFor="cin" className="label-title" style={{ marginLeft: "8px" }}>
                   {t('Home:cin')}
                 </label>
               </div>
@@ -138,7 +138,7 @@ const Step2 = ({formik,getFormErrorMessage,isFormFieldValid,t}) => {
                   onChange={formik.handleChange}
                   checked={formik.values.piece_identite === "passeport"}
                 />
-                <label htmlFor="passeport" style={{ marginLeft: "8px" }}>
+                <label className="label-title" htmlFor="passeport" style={{ marginLeft: "8px" }}>
                   Passeport
                 </label>
               </div>
@@ -147,7 +147,7 @@ const Step2 = ({formik,getFormErrorMessage,isFormFieldValid,t}) => {
               <label
                 htmlFor="n_piece_identite"
                 className={
-                  "mb-2" ||
+                  "mb-2 label-title" ||
                   classNames({
                     "p-error": isFormFieldValid("n_piece_identite"),
                   })

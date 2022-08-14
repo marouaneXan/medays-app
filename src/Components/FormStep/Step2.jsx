@@ -11,7 +11,7 @@ const Step2 = ({formik,getFormErrorMessage,isFormFieldValid}) => {
               <label
                 htmlFor="pays"
                 className={
-                  "mb-2" || classNames({ "p-error": isFormFieldValid("pays") })
+                  "mb-2 label-title" || classNames({ "p-error": isFormFieldValid("pays") })
                 }
               >
                 Pays de résidence
@@ -33,7 +33,7 @@ const Step2 = ({formik,getFormErrorMessage,isFormFieldValid}) => {
               <label
                 htmlFor="ville"
                 className={
-                  "mb-2" || classNames({ "p-error": isFormFieldValid("ville") })
+                  "mb-2 label-title" || classNames({ "p-error": isFormFieldValid("ville") })
                 }
               >
                 Ville
@@ -53,7 +53,7 @@ const Step2 = ({formik,getFormErrorMessage,isFormFieldValid}) => {
               <label
                 htmlFor="email"
                 className={
-                  "mb-2" || classNames({ "p-error": isFormFieldValid("email") })
+                  "mb-2 label-title" || classNames({ "p-error": isFormFieldValid("email") })
                 }
               >
                 Email
@@ -73,7 +73,7 @@ const Step2 = ({formik,getFormErrorMessage,isFormFieldValid}) => {
               <label
                 htmlFor="tel_pro"
                 className={
-                  "mb-2" ||
+                  "mb-2 label-title" ||
                   classNames({ "p-error": isFormFieldValid("tel_pro") })
                 }
               >
@@ -94,7 +94,7 @@ const Step2 = ({formik,getFormErrorMessage,isFormFieldValid}) => {
               <label
                 htmlFor="tele_mob"
                 className={
-                  "mb-2" ||
+                  "mb-2 label-title" ||
                   classNames({ "p-error": isFormFieldValid("tele_mob") })
                 }
               >
@@ -128,7 +128,7 @@ const Step2 = ({formik,getFormErrorMessage,isFormFieldValid}) => {
                   onChange={formik.handleChange}
                   checked={formik.values.piece_identite === "cin"}
                 />
-                <label htmlFor="cin" style={{ marginLeft: "8px" }}>
+                <label htmlFor="cin" className="label-title" style={{ marginLeft: "8px" }}>
                   CIN (Résidents marocains)
                 </label>
               </div>
@@ -139,7 +139,7 @@ const Step2 = ({formik,getFormErrorMessage,isFormFieldValid}) => {
                   onChange={formik.handleChange}
                   checked={formik.values.piece_identite === "passeport"}
                 />
-                <label htmlFor="passeport" style={{ marginLeft: "8px" }}>
+                <label htmlFor="passeport" className="label-title" style={{ marginLeft: "8px" }}>
                   Passeport
                 </label>
               </div>
@@ -148,7 +148,7 @@ const Step2 = ({formik,getFormErrorMessage,isFormFieldValid}) => {
               <label
                 htmlFor="n_piece_identite"
                 className={
-                  "mb-2" ||
+                  "mb-2 label-title" ||
                   classNames({
                     "p-error": isFormFieldValid("n_piece_identite"),
                   })

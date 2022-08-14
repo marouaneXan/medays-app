@@ -14,7 +14,7 @@ const Step3 = ({formik, getFormErrorMessage, isFormFieldValid }) => {
           style={{ fontWeight: "bold", fontSize: "14px" }}
           htmlFor="motivation"
           className={
-            "mb-4" || classNames({ "p-error": isFormFieldValid("motivation") })
+            "mb-4 label-title" || classNames({ "p-error": isFormFieldValid("motivation") })
           }
         >
           {t('Home:oppenion')}
