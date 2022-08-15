@@ -3,6 +3,7 @@ import { InputText } from "primereact/inputtext";
 import { classNames } from "primereact/utils";
 import { Dropdown } from "primereact/dropdown";
 import { countries } from "../../data/countries";
+import { Calendar } from "primereact/calendar";
 const Step1 = ({formik,getFormErrorMessage,isFormFieldValid,t}) => {
   return (
     <>
@@ -142,7 +143,7 @@ const Step1 = ({formik,getFormErrorMessage,isFormFieldValid,t}) => {
         >
           {t("Home:nissance")}
         </label>
-        <InputText
+        <Calendar
           value={formik.values.date_naissance}
           onChange={formik.handleChange}
           id="date_naissance"

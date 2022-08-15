@@ -5,6 +5,7 @@ const ButtonNavigation = ({page,nextPage,nextP,prevPage}) => {
     <>
       {page === 0 && (
         <Button
+        type="submit"
           label="SUIVANT"
           onClick={nextPage}
           className="p-button-help p-button-rounded shadow-none label-title"
@@ -18,6 +19,7 @@ const ButtonNavigation = ({page,nextPage,nextP,prevPage}) => {
             className="p-button-secondary p-button-rounded shadow-none label-title"
           />
           <Button
+          type="submit"
             label="SUIVANT"
             onClick={nextP}
             className=" p-button-help p-button-rounded shadow-none label-title"

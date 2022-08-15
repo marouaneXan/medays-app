@@ -2,8 +2,10 @@ import { RadioButton } from "primereact/radiobutton";
 import { InputText } from "primereact/inputtext";
 import { classNames } from "primereact/utils";
 import { Dropdown } from "primereact/dropdown";
+import {Calendar} from 'primereact/calendar';
 import { countries } from "../../data/countries";
 const Step1 = ({formik,getFormErrorMessage,isFormFieldValid,t}) => {
+  
   return (
     <>
       <div className="d-flex" style={{ width: "280px" }}>
@@ -142,7 +144,7 @@ const Step1 = ({formik,getFormErrorMessage,isFormFieldValid,t}) => {
         >
           {t("Home:nissance")}
         </label>
-        <InputText
+        <Calendar
           value={formik.values.date_naissance}
           onChange={formik.handleChange}
           id="date_naissance"

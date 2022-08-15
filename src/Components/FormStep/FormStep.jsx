@@ -173,7 +173,7 @@ const FormStep = ({ page, setPage }) => {
   const prevPage = () => {
     setPage(page - 1);
   };
-  // console.log(formik);
+  console.log(formik);
   return (
     <div className="col-sm-7 mt-2 p-5">
       <h4 className="">{t("Home:app_req_mssg")}</h4>
